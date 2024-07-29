@@ -8,9 +8,9 @@ By :Hera
 3. tambahkan package.json (npm init -y)
 4. untuk frontend tambahkan <https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css> pada index.html
 
-# beberapa catatan penting pada implementasi websocket pada file game.js dan server.js
+beberapa catatan penting pada implementasi websocket pada file game.js dan server.js
 
-*server.js*
+# server.js
 
 *untuk impor modul websocekt (ws) dan server berjalan pada port 8080*<br>
 
@@ -31,7 +31,7 @@ function resetGame() {<br>
   });<br>
 }<br>
 
-*game.js*<br>
+# game.js
 
 *untuk koneksi awal websoket dan variabel awal, player, myTurn, playerName, opponentName, <br>
 scores: Variabel untuk menyimpan informasi tentang pemain, giliran, nama pemain, nama lawan, dan skor.*<br>
