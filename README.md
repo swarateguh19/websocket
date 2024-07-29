@@ -12,9 +12,10 @@ By :Hera
 
 *server.js*
 
-*untuk impor modul websocekt (ws) dan server berjalan pada port 8080*
-const WebSocket = require("ws");
-const server = new WebSocket.Server({ port: 8080 });
+*untuk impor modul websocekt (ws) dan server berjalan pada port 8080*<br>
+
+const WebSocket = require("ws");<br>
+const server = new WebSocket.Server({ port: 8080 });<br>
 
 *untuk variabel awal*
 let players = [];
