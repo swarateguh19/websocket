@@ -35,11 +35,28 @@ function resetGame() {<br>
 
 *untuk koneksi awal websoket dan variabel awal, player, myTurn, playerName, opponentName, <br>
 scores: Variabel untuk menyimpan informasi tentang pemain, giliran, nama pemain, nama lawan, dan skor.*<br>
+
 const ws = new WebSocket("ws://*ketik alamat ip perangkatmu*:8080");<br>
 let player = null;<br>
 let myTurn = false;<br>
 let playerName = "";<br>
 let opponentName = "";<br>
 let scores = { X: 0, O: 0 };<br>
+
+*buat event listener untuk tombol login dan ambil nama pemain dari input lalu<br>
+kirim pesan login ke server websocket. Setelah itu sembunyikan login dan menampilkan board game.<br>*
+
+<br>
+document.getElementById("loginButton").addEventListener("click", () => {<br>
+  playerName = document.getElementById("name").value;<br>
+  if (playerName) {<br>
+    console.log("Sending login message:", playerName);<br>
+    ws.send(JSON.stringify({ type: "login", name: playerName }));<br>
+    document.getElementById("login").classList.add("hidden");<br>
+    document.getElementById("gameContainer").classList.remove("hidden");<br>
+  }<br>
+});<br>
+
+
 
 
