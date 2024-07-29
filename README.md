@@ -17,31 +17,29 @@ By :Hera
 const WebSocket = require("ws");<br>
 const server = new WebSocket.Server({ port: 8080 });<br>
 
-*untuk variabel awal*
-let players = [];
-let board = Array(9).fill(null);
-let currentPlayer = "X";
-let scores = { X: 0, O: 0 };
+*untuk variabel awal*<br>
+let players = [];<br>
+let board = Array(9).fill(null);<br>
+let currentPlayer = "X";<br>
+let scores = { X: 0, O: 0 };<br>
 
-function resetGame() {
-  board = Array(9).fill(null);
-  currentPlayer = "X";
-  players.forEach((player) => {
-    player.ws.send(JSON.stringify({ type: "reset", scores }));
-  });
-}
+function resetGame() {<br>
+  board = Array(9).fill(null);<br>
+  currentPlayer = "X";<br>
+  players.forEach((player) => {<br>
+    player.ws.send(JSON.stringify({ type: "reset", scores }));<br>
+  });<br>
+}<br>
 
-*game.js*
+*game.js*<br>
 
-*untuk koneksi awal websoket dan variabel awal, player, myTurn, playerName, opponentName, 
-scores: Variabel untuk menyimpan informasi tentang pemain, giliran, nama pemain, nama lawan, dan skor.*
-const ws = new WebSocket("ws://*ketik alamat ip perangkatmu*:8080");
-let player = null;
-let myTurn = false;
-let playerName = "";
-let opponentName = "";
-let scores = { X: 0, O: 0 };
-
-# ============================================================================================================ #
+*untuk koneksi awal websoket dan variabel awal, player, myTurn, playerName, opponentName, <br>
+scores: Variabel untuk menyimpan informasi tentang pemain, giliran, nama pemain, nama lawan, dan skor.*<br>
+const ws = new WebSocket("ws://*ketik alamat ip perangkatmu*:8080");<br>
+let player = null;<br>
+let myTurn = false;<br>
+let playerName = "";<br>
+let opponentName = "";<br>
+let scores = { X: 0, O: 0 };<br>
 
 
