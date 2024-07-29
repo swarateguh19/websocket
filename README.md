@@ -9,8 +9,8 @@ By :Hera
 4. untuk frontend tambahkan <https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css> pada index.html
 
 # beberapa catatan penting pada implementasi websocket pada file game.js dan server.js
-=====================================================================================================================
-# server.js
+
+*server.js*
 
 *untuk impor modul websocekt (ws) dan server berjalan pada port 8080*
 const WebSocket = require("ws");
@@ -30,7 +30,7 @@ function resetGame() {
   });
 }
 
-# game.js
+*game.js*
 
 *untuk koneksi awal websoket dan variabel awal, player, myTurn, playerName, opponentName, 
 scores: Variabel untuk menyimpan informasi tentang pemain, giliran, nama pemain, nama lawan, dan skor.*
