@@ -1,5 +1,5 @@
 # REALTIME TIC-TAC-TOE 
-## _Implementasi WebSocket koneksi Realtime Game Tic Tac Toe, Ever_
+## _Implementasi WebSocket koneksi Realtime Game Tic Tac Toe,
 
 hai aku hera, jadi di project ini adalah project akhir dari matkul Pemrograman Jaringan. Pada project ini
 aku membuat game Tic Tac Toe dengan mengunakan WebSocket. Game ini masih sederhana dan bisa dikembangkan lagi.
